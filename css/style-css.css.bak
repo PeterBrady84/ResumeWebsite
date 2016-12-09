@@ -139,7 +139,7 @@ img.resize {
     opacity: .8;
 }
 
-a.list-group-item.clickable:hover {
+a.list-group-item:hover {
     background-color: #FCF881;
     color: black;
     border-color: greenyellow;
@@ -179,10 +179,6 @@ img.clickable:hover {
 
 .clickable {
     cursor: pointer
-}
-
-.disable-me {
-    pointer-events: none;
 }
 
 .btn.btn-primary {

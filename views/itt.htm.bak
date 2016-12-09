@@ -13,7 +13,7 @@
 
     <!-- GPA -->
     <div class="list-group" id="GPA">
-        <a href="#GPA" class="list-group-item active disable-me">
+        <a href="#GPA" class="list-group-item active">
             <h4 class="list-group-item-heading">GPA</h4></a>
 
         <a data-toggle="modal" data-target="#gpaYr4" class="list-group-item clickable">

@@ -1,9 +1,5 @@
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Epic Search Engine</h4>
-        </div>
         <div id="carousel-epic-search" class="carousel slide" data-ride="carousel">
 
             <!-- Wrapper for slides -->

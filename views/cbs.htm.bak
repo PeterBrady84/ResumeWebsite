@@ -14,10 +14,10 @@
 
     <!-- Leaving Cert -->
     <div class="list-group" id="LeavingCert">
-        <a href="#LeavingCert" class="list-group-item active disable-me">
+        <a href="#LeavingCert" class="list-group-item active">
             <h4 class="list-group-item-heading">Leaving Certificate</h4></a>
 
-        <a data-toggle="modal" data-target="#leaving" class="list-group-item clickable">
+        <a data-toggle="modal" data-target="#leaving" class="list-group-item">
             <h4 class="list-group-item-heading">Results</h4>
             <p class="list-group-item-text">310 points</p></a>
     </div> <!-- /Leaving Cert -->

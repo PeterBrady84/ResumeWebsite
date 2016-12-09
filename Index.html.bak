@@ -196,7 +196,7 @@
         <hr class="featurette-divider" style="margin: 10px 0px">
 
         <!-- Achievements -->
-        <div ng-include="'views/achievements.htm'"></div>
+        <div ng-include="'views/skills.htm'"></div>
 
     </div> <!-- /ACHIEVEMENTS -->
 

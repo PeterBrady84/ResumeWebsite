@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Peter Brady CV</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style-css.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/icons/favicon.ico"/>
+
+</head>
+
+<body ng-app>
+<!-- Nav Bar -->
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#top">Peter Brady</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="https://github.com/PeterBrady84/" target="_blank">GitHub</a></li>
+                <li><a data-toggle="modal" data-target="#contactModal">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
+
+<!-- Full Page Image Header Area -->
+<div id="top" class="header-image header">
+    <div class="vert-text">
+        <div class="container">
+            <img class="featurette-image" src="images/icons/self_portrait.png" alt="Self Portrait">
+            <h1>Peter Brady</h1>
+            <h3>BSc <em>(Hons)</em> in Computer Science with Software Development</h3>
+            <a href="#about" class="btn btn-primary btn-sm" style="margin-right: 20px">Find Out More</a>
+            <!-- Button trigger contact modal -->
+
+            <a data-toggle="modal" data-target="#contactModal" class="btn btn-primary btn-sm">Contact</a>
+            <br/><br/>
+            <!--
+            <a href="http://peterbradyresume.azurewebsites.net/" class="btn btn-primary btn-sm" target="_blank">Live Site</a>
+            -->
+
+        </div>
+    </div>
+</div>
+<!-- /Full Page Image Header Area -->
+
+<div class="container">
+
+    <!-- START THE FEATURETTES -->
+
+    <!-- ABOUT -->
+    <div id="about">
+
+        <hr class="featurette-divider" style="margin-top: 10px">
+        <section>
+            <div class="parallax-one parallax  parallax-text">
+                <h2>About</h2>
+            </div>
+        </section>
+        <hr class="featurette-divider" style="margin: 10px 0px">
+
+        <!-- Personal Details -->
+        <div ng-include="'views/about_me.htm'"></div>
+
+    </div> <!-- ABOUT -->
+
+    <!-- EDUCATION -->
+    <div id="education">
+
+        <hr class="featurette-divider" style="margin-top: 10px">
+        <section>
+            <div class="parallax-two parallax parallax-text">
+                <h2>Education</h2>
+            </div>
+        </section>
+        <hr class="featurette-divider" style="margin: 10px 0px">
+
+        <!-- ITT -->
+        <div ng-include="'views/itt.htm'"></div>
+
+        <hr class="featurette-divider" style="margin: 10px">
+
+        <!-- CBS Naas -->
+        <div ng-include="'views/cbs.htm'"></div>
+
+    </div> <!-- /EDUCATION -->
+
+
+    <!-- EXPERIENCE -->
+    <div id="experience">
+
+        <hr class="featurette-divider" style="margin-top: 10px">
+
+        <section>
+            <div class="parallax-three parallax parallax-text">
+                <h2>Experience</h2>
+            </div>
+        </section>
+
+        <hr class="featurette-divider" style="margin: 10px 0px">
+        <h2><span class="text-muted">Relevant Experience</span></h2>
+        <hr class="featurette-divider" style="margin: 10px">
+
+        <!-- Ericsson -->
+        <div ng-include="'views/ericsson.htm'"></div>
+
+        <hr class="featurette-divider" style="margin: 10px">
+
+        <h2><span class="text-muted">Other Experience</span></h2>
+        <hr class="featurette-divider" style="margin: 10px">
+
+        <!-- Murphys -->
+        <div ng-include="'views/murphys.htm'"></div>
+
+        <hr class="featurette-divider" style="margin: 10px">
+
+        <!-- O'Dohertys -->
+        <div ng-include="'views/odohertys.htm'"></div>
+
+        <hr class="featurette-divider" style="margin: 10px">
+
+        <!-- HRI -->
+        <div ng-include="'views/hri.htm'"></div>
+
+    </div> <!-- /EXPERIENCE -->
+
+    <!-- PROJECTS -->
+    <div id="projects">
+
+        <hr class="featurette-divider" style="margin-top: 10px">
+        <section>
+            <div class="parallax-four parallax parallax-text">
+                <h2>Projects</h2>
+            </div>
+        </section>
+        <hr class="featurette-divider" style="margin: 10px 0px">
+
+        <!-- Projects Table -->
+        <div ng-include="'views/projects.htm'"></div>
+
+    </div> <!-- /PROJECTS -->
+
+    <!-- SKILLS -->
+    <div id="skills">
+
+        <hr class="featurette-divider" style="margin-top: 10px">
+        <section>
+            <div class="parallax-five parallax parallax-text">
+                <h2>Skills</h2>
+            </div>
+        </section>
+        <hr class="featurette-divider" style="margin: 10px 0px">
+
+        <!-- Skills -->
+        <div ng-include="'views/skills.htm'"></div>
+
+    </div> <!-- /SKILLS -->
+
+    <!-- ACHIEVEMENTS -->
+    <div id="achievements">
+
+        <hr class="featurette-divider" style="margin-top: 10px">
+        <section>
+            <div class="parallax-six parallax parallax-text">
+                <h2>Achievements</h2>
+            </div>
+        </section>
+        <hr class="featurette-divider" style="margin: 10px 0px">
+
+        <!-- Achievements -->
+        <div ng-include="'views/skills.htm'"></div>
+
+    </div> <!-- /ACHIEVEMENTS -->
+
+    <!-- REFERENCES -->
+    <div id="references">
+
+        <hr class="featurette-divider" style="margin-top: 10px">
+        <section>
+            <div class="parallax-seven parallax parallax-text">
+                <h2>References</h2>
+            </div>
+        </section>
+        <hr class="featurette-divider" style="margin: 10px 0px">
+
+        <!-- References -->
+        <div ng-include="'views/references.htm'"></div>
+
+    </div> <!-- /REFERENCES -->
+
+    <!-- CV DOWNLOAD -->
+    <div id="cv">
+
+        <hr class="featurette-divider" style="margin-top: 10px">
+        <section>
+            <div class="parallax-eight parallax parallax-text">
+                <h2>Download CV</h2>
+            </div>
+        </section>
+        <hr class="featurette-divider" style="margin: 10px 0px">
+
+        <!-- CV -->
+        <div ng-include="'views/cv.htm'"></div>
+
+    </div> <!-- /CV DOWNLOAD -->
+
+    <hr class="featurette-divider" style="margin-top: 10px">
+
+    <!-- /END THE FEATURETTES -->
+
+    <section>
+        <div class="parallax-text">
+            <h2><a id="backtotop" href="#top">Back to top</a></h2>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Copyright &copy; Peter Brady 2016 &middot; <a
+                href="https://www.linkedin.com/in/peter-brady-14036891/" target="_blank">LinkedIn</a> &middot; <a
+                href="https://github.com/PeterBrady84" target="_blank">Github</a>
+        </p>
+    </footer> <!-- /FOOTER -->
+
+</div><!-- /container -->
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div ng-include="'modals/contact_modal.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Contact Modal -->
+
+<!-- GPA Year 1 -->
+<div class="modal fade" id="gpaYr1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div ng-include="'modals/gpa_year_1.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- GPA Year 2 -->
+<div class="modal fade" id="gpaYr2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div ng-include="'modals/gpa_year_2.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- GPA Year 3 -->
+<div class="modal fade" id="gpaYr3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div ng-include="'modals/gpa_year_3.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- GPA Year 4 -->
+<div class="modal fade" id="gpaYr4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div ng-include="'modals/gpa_year_4.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- Leaving Cert Results -->
+<div class="modal fade" id="leaving" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div ng-include="'modals/leaving_cert.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- 3 Ball Strike Bowling Modal -->
+<div class="modal fade" id="3-ball-strike-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div ng-include="'modals/3_ball_strike.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- Basic Kneads Pizza Modal -->
+<div class="modal fade" id="pizza-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div ng-include="'modals/pizza.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- Epic Search Modal -->
+<div class="modal fade" id="epic-search-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div ng-include="'modals/epic_search.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- Fuel Logger Modal -->
+<div class="modal fade" id="fuel-logger-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div ng-include="'modals/fuel_logger.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- Fuel Logger Modal -->
+<div class="modal fade" id="resume-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div ng-include="'modals/resume.htm'"></div>
+</div><!-- /.modal -->
+<!-- End Modal -->
+
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<!-- javascript -->
+<script src="js/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="./js/jqBootstrapValidation.js"></script>
+<script src="./js/contact_me.js"></script>
+
+<!-- Smooth Scrolling -->
+<script>
+    $(function () {
+        $('a[href*=#]:not([href=#]):not([href=#carousel-3-ball-strike]):not([href=#carousel-pizza]):not([href=#carousel-epic-search]):not([href=#carousel-fuel-logger]):not([href=#carousel-resume])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
